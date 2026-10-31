@@ -1,0 +1,68 @@
+[
+  {
+    "path": ".pytest_cache",
+    "files": 0,
+    "bytes": 0,
+    "status": "retained: access denied before deletion"
+  },
+  {
+    "path": "__pycache__",
+    "files": 1,
+    "bytes": 6206.0,
+    "status": "removed"
+  },
+  {
+    "path": ".ruff_cache",
+    "files": 7,
+    "bytes": 5490.0,
+    "status": "removed"
+  },
+  {
+    "path": "backend\\server\\__pycache__",
+    "files": 32,
+    "bytes": 360226.0,
+    "status": "removed"
+  },
+  {
+    "path": "backend\\server\\core\\__pycache__",
+    "files": 41,
+    "bytes": 730094.0,
+    "status": "removed"
+  },
+  {
+    "path": "backend\\server\\database\\__pycache__",
+    "files": 6,
+    "bytes": 83966.0,
+    "status": "removed"
+  },
+  {
+    "path": "backend\\server\\routes\\__pycache__",
+    "files": 8,
+    "bytes": 134679.0,
+    "status": "removed"
+  },
+  {
+    "path": "dist\\behedr-p1-2026-10-30",
+    "files": 87,
+    "bytes": 1089358.0,
+    "status": "removed"
+  },
+  {
+    "path": "endpoint\\__pycache__",
+    "files": 11,
+    "bytes": 149683.0,
+    "status": "removed"
+  },
+  {
+    "path": "tests\\__pycache__",
+    "files": 25,
+    "bytes": 395493.0,
+    "status": "removed"
+  },
+  {
+    "path": "tools\\__pycache__",
+    "files": 5,
+    "bytes": 46653.0,
+    "status": "removed"
+  }
+]

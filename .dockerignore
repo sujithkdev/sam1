@@ -1,0 +1,15 @@
+*
+!backend/
+!backend/**
+!rules/
+!rules/**
+!requirements/
+!requirements/server.txt
+!requirements/server.lock
+!manage.py
+!deploy/
+!deploy/Dockerfile
+**/__pycache__/
+**/*.pyc
+**/*.db
+**/*.log

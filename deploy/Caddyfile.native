@@ -1,0 +1,6 @@
+# Replace behedr.lab with the hostname/IP that Windows will use.
+# For a private lab, distribute ONLY this Caddy instance's root CA certificate.
+https://behedr.lab {
+    tls internal
+    reverse_proxy 127.0.0.1:5000
+}

@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\projects\\newmalware\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "architecture": "AMD64",
+  "windows_version": [
+    "11",
+    "10.0.26300",
+    "SP0",
+    "Multiprocessor Free"
+  ]
+}

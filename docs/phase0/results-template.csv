@@ -1,0 +1,1 @@
+run_id,scenario_id,variant,dataset_split,valid_run,ground_truth_label,execution_succeeded,detected,alert_count,false_alert_count,benign_endpoint_hours,latency_seconds,expected_events,observed_events,attributed_events,cpu_percent,memory_peak_bytes,disk_bytes,network_bytes,notes

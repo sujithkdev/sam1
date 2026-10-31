@@ -1,0 +1,24 @@
+[Unit]
+Description=BehEDR server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=behedr
+Group=behedr
+WorkingDirectory=/opt/behedr
+Environment=EDR_CONFIG_FILE=/etc/behedr/server.env
+ExecStart=/opt/behedr/.venv/bin/python /opt/behedr/manage.py serve
+Restart=on-failure
+RestartSec=5
+UMask=0077
+StateDirectory=behedr
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/behedr
+
+[Install]
+WantedBy=multi-user.target

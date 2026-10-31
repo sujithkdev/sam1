@@ -1,0 +1,37 @@
+services:
+  server:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    env_file: ../.env
+    environment:
+      EDR_HOST: 0.0.0.0
+      EDR_DATA_DIR: /app/var/server
+    volumes:
+      - server-data:/app/var/server
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    stop_grace_period: 40s
+  proxy:
+    image: caddy:2@sha256:3095ad245c353e3bdb27a38f22a095c1cfa9e295ab21c0214c3e72b0e2960525
+    environment:
+      EDR_DOMAIN: ${EDR_DOMAIN:?Set EDR_DOMAIN to the server DNS name}
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      server:
+        condition: service_healthy
+    restart: unless-stopped
+volumes:
+  server-data:
+  caddy-data:
+  caddy-config:

@@ -148,7 +148,9 @@ def build(destination, root=ROOT):
     destination = Path(destination)
     destination.mkdir(parents=True, exist_ok=False)
     packages = {'server': [('backend/server', None), ('rules', None),
-                           ('manage.py', 'manage.py'), ('requirements/server.lock', None),
+                           ('manage.py', 'manage.py'), ('linux.sh', None),
+                           ('tools/verify_r0_install.py', None),
+                           ('docs/operations/LINUX_QUICKSTART.md', None), ('requirements/server.lock', None),
                            ('requirements/server.txt', None), ('docs/operations/operations.md', None),
                            ('docs/operations/phase8-operations.md', None), ('docs/architecture/dashboard-redesign.md', None),
                            ('tools/lab_status.py', None), ('docs/operations/verification-workflow.md', None)],

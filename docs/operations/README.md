@@ -1,5 +1,7 @@
 # Operations and deployment
 
+- [Easy Linux download, setup and test](LINUX_QUICKSTART.md)
+
 - [Operations and service setup](operations.md)
 - [Migration](migration.md)
 - [Historical deployment runbook](phase2-deployment.md)

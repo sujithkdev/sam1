@@ -1,5 +1,7 @@
 # Complete first-party Markdown catalog
 
+- [Linux quick start](operations/LINUX_QUICKSTART.md)
+
 Generated for the documentation reorganization begun 30 October 2026.
 Includes the root README and all docs Markdown; external repositories, generated
 packages and environment/vendor documentation remain with their owning artifacts.

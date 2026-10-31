@@ -1,5 +1,9 @@
 # BehEDR
 
+**Easy Linux setup:** [download, install, test and run](docs/operations/LINUX_QUICKSTART.md).
+From the downloaded project: `bash linux.sh setup`, `bash linux.sh test`, then
+`bash linux.sh start`. In a second terminal run `bash linux.sh check`.
+
 **Start here:** [Documentation index](docs/README.md), [current status](docs/CURRENT_STATUS.md)
 and [P0–P9 research development roadmap](docs/development/ROADMAP.md).
 Generated packages in `dist/` and older plans are not the authoritative development source.
